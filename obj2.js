@@ -6,6 +6,7 @@
 // 3. Define a function named getHorsepower directly within the Car type alias to retrieve the
 // engine's horsepower.
 let car1 = {
+    name: "mclaren",
     engine: {
         horsepower: 720
     },

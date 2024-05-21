@@ -19,21 +19,25 @@ let products = {
         stock: 30,
         colorOptions: ["red", "blue", "white", "black", "gray"],
         changeColor: (newcolor) => {
-            products.color = newcolor;
-            if (newcolor == "red") {
-                console.log("ustad manga hn");
-                return (products.price *= 1.1);
-            }
-            else if (newcolor == "blue") {
-                console.log("jani sasta hn");
-                return (products.price *= 0.95);
+            if (products.inventory.colorOptions?.includes(newcolor)) {
+                products.color = newcolor;
+                if (newcolor == "red") {
+                    products.price *= 1.1;
+                    return console.log(`you select ${products.name} of ${products.color} and its price is ${products.price}`);
+                }
+                else if (newcolor == "blue") {
+                    products.price *= 0.95;
+                    return console.log(`you select ${products.name} of ${products.color} and its price is ${products.price}`);
+                }
+                else {
+                    return console.log(`you select ${products.name} of ${products.color} and its price is ${products.price}`);
+                }
             }
             else {
-                console.log("ab color dekho smjh ahta hn toh leh lo");
-                return products.inventory.colorOptions;
+                return console.log(`Color "${newcolor}" is not available.`);
             }
         },
-    },
+    }
 };
-console.log(products.inventory.changeColor("gray"));
+console.log(products.inventory.changeColor("blu"));
 export {};

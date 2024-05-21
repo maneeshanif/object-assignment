@@ -7,6 +7,7 @@
 // engine's horsepower.
 
 type Car = {
+    name?:string,
     engine : {
         horsepower:number
     }
@@ -14,6 +15,7 @@ type Car = {
 }
 
 let car1 :Car ={
+    name:"mclaren",
     engine:{
         horsepower:720
     },
