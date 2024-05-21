@@ -9,6 +9,7 @@
 // 4. Make the skills property an optional array of strings for listing an employee's skills (if
 // any).
 import chalk from "chalk"
+
 type Employee = {
     name:string,
     department:string,
@@ -31,12 +32,17 @@ let employee:Employee = {
     },
 }
 
+console.log(chalk.blueBright.bgHex('#faf0be')("\t\t\t\t\t\t\t Employee Data"));
+console.log(chalk.redBright("-----------------------------------------------------------------------------------------------------------------\n"));
+
+
 //The assignment is completed above.  In the following section, 
 //I'll explore techniques for printing objects in various ways for my self-study. 
 // Below, you'll find examples of how to achieve this.
 
 // its print the whole object
 console.log(employee);
+console.log(chalk.hex("FFA533")("-----------------------------------------------------------------------------------------------------------------\n"));
 
 // its prints the keys of object
 // console.log(Object.keys(employee));
