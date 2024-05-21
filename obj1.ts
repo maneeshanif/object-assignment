@@ -8,7 +8,7 @@
 // "Intern".
 // 4. Make the skills property an optional array of strings for listing an employee's skills (if
 // any).
-
+import chalk from "chalk"
 type Employee = {
     name:string,
     department:string,
