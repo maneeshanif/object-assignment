@@ -99,7 +99,7 @@ console.log(chalk.hex("93FF33").bold.bgYellowBright("\t\t\t\t\t\t User Cart"));
 
 console.log("\n\n");
 
-let userinput = products.inventory.changeColor("red");
+let userinput = products.inventory.changeColor("blue");
 console.log(userinput);
 console.log(
   chalk.magentaBright(

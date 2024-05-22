@@ -57,7 +57,7 @@ console.log(chalk.hex("33FFE6")(`Products stock: ${products.inventory.stock}`));
 console.log(chalk.cyanBright("-----------------------------------------------------------------------------------------------------------------\n"));
 console.log(chalk.hex("93FF33").bold.bgYellowBright("\t\t\t\t\t\t User Cart"));
 console.log("\n\n");
-let userinput = products.inventory.changeColor("red");
+let userinput = products.inventory.changeColor("blue");
 console.log(userinput);
 console.log(chalk.magentaBright("-----------------------------------------------------------------------------------------------------------------\n"));
 console.log(chalk.magentaBright("-----------------------------------------------------------------------------------------------------------------\n"));
